@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class BasePage():
     # добавим конструктор — метод, который вызывается, когда мы создаем объект. Конструктор объявляется ключевым словом __init__
-    # browser прилетает из conftest.py, а url из файлов с тестами
+    # browser прилетает из conftest.py в файл теста, далее экземпляр драйвера и url прилетает из файлов с тестами в конструктор
     def __init__(self, browser, url, timeout=10): #добавим команду для неявного ожидания со значением по умолчанию в 10
         self.browser = browser
         self.url = url
