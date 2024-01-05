@@ -32,4 +32,3 @@ class TestLogin:
         text_in_element = browser.find_element_by_css_selector("pre.smart-hints__hint")
         print(text_in_element.text + " : Answer")
         assert text_in_element.text == "Correct!", "Text element should be equal 'Correct!'"
-        
